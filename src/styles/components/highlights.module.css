@@ -1,0 +1,240 @@
+:root {
+  --primary-color: #ff4141;
+  --secondary-color: #3a3a3a;
+  --tertiary-color: #d9d9d9;
+  --quaternary-color: #f5f5f5;
+  --quinary-color: #f9f9f9;
+  --font-primary-color: #f9f9f9;
+  --font-secondary-color: #3a3a3a;
+}
+
+.highlights {
+  display: flex;
+  flex-direction: column;
+  cursor: crosshair;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "about ue ust blackfort"
+    "about ue ust blackfort"
+    "about ue ust blackfort";
+  text-align: right;
+  z-index: 1;
+}
+
+.about {
+  grid-area: about;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  padding: 1.5rem;
+  background-color: var(--quaternary-color);
+}
+
+.ue {
+  grid-area: ue;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  padding: 1.5rem;
+}
+
+.redwarriorOverlay,
+.tigerOverlay,
+.blackfortOverlay {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ueRedwarriorLogo,
+.ustTigerLogo,
+.blackfortLogo {
+  width: 10rem;
+  height: 13rem;
+  transition: 0.5s ease-in-out;
+}
+
+.ue .header,
+.ue .subHeader,
+.blackfort .header,
+.blackfort .subHeader {
+  color: var(--quaternary-color);
+  transition: 0.2s ease-in-out;
+}
+
+.ust .header {
+  transition: 0.2s ease-in-out;
+}
+
+.accomplishmentsUe ul li span,
+.accomplishmentsUst ul li span,
+.accomplishmentsBlackfort ul li span {
+  font-weight: 900;
+}
+
+.accomplishmentsUe ul,
+.accomplishmentsUst ul,
+.accomplishmentsBlackfort ul {
+  padding: 0.6rem 0;
+}
+
+.accomplishmentsUe ul li,
+.accomplishmentsBlackfort ul li {
+  padding: 0.6rem 0;
+  text-align: right;
+  color: var(--quaternary-color);
+}
+
+.accomplishmentsUst ul li {
+  padding: 0.6rem 0;
+  text-align: right;
+}
+
+.completionDateUe span,
+.completionDateBlackfort span {
+  color: var(--quaternary-color);
+}
+
+.ust {
+  grid-area: ust;
+  background-color: var(--quaternary-color);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  padding: 1.5rem;
+}
+
+.blackfort {
+  grid-area: blackfort;
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  padding: 1.5rem;
+}
+
+.header {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1.5rem 0;
+  text-align: right;
+}
+
+.paragraph {
+  text-align: right;
+}
+
+.paragraph span {
+  color: var(--primary-color);
+}
+
+.subHeader {
+  text-align: right;
+}
+
+.credits {
+  font-size: 0.5rem;
+  padding: 2rem;
+  color: var(--quaternary-color);
+}
+
+.downloadResume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.resumeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 0.625rem;
+  cursor: pointer;
+  font-weight: 900;
+  color: var(--primary-color);
+  transition: 0.2s ease-in-out;
+}
+
+.resumeButtonDisabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 0.625rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.resumeButton:hover {
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "about"
+      "ue"
+      "ust"
+      "blackfort";
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "about"
+      "ue"
+      "ust"
+      "blackfort";
+  }
+}
+
+@media screen and (max-width: 1438px) and (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "about"
+      "ue"
+      "ust"
+      "blackfort";
+  }
+}

@@ -1,0 +1,264 @@
+:root {
+  --primary-color: #ff4141;
+  --secondary-color: #3a3a3a;
+  --tertiary-color: #d9d9d9;
+  --quaternary-color: #f5f5f5;
+  --quinary-color: #f9f9f9;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr 1fr;
+  grid-template-rows: 1fr 0.9fr 0.8fr;
+  grid-template-areas:
+    "utilities jolopic ."
+    ". box-red  .  "
+    ". . introductory";
+  background-color: var(--tertiary-color);
+}
+
+.utilities {
+  background-color: var(--quaternary-color);
+  grid-area: utilities;
+  text-align: right;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20rem;
+}
+
+.imageJolo {
+  max-width: 800px;
+  position: absolute;
+  filter: drop-shadow(10px 0px 0px #3a3a3a);
+}
+
+.imageProperties {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fullstackText,
+.name {
+  line-height: 0.8;
+  z-index: 1;
+}
+
+.textHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.textFull {
+  font-weight: 900;
+  font-size: 3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.textStack,
+.developer {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.surname {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+}
+
+.givenName {
+  font-size: 3rem;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+}
+
+.textStack:hover,
+.surname:hover {
+  color: var(--secondary-color);
+  cursor: crosshair;
+}
+
+.textFull:hover,
+.givenName:hover {
+  color: var(--primary-color);
+  cursor: crosshair;
+}
+
+.textFull:hover ~ .textStack,
+.givenName:hover ~ .surname {
+  color: #3a3a3a;
+  cursor: crosshair;
+}
+
+.introductory {
+  grid-area: introductory;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  background-color: var(--quaternary-color);
+}
+
+.boxTwo {
+  grid-area: box-red;
+  background-color: var(--primary-color);
+  z-index: 2;
+  font-weight: 900;
+  cursor: none;
+}
+
+.boxTwo .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnTwo {
+  text-align: right;
+}
+
+.columnOne,
+.columnTwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnOne span,
+.columnTwo span {
+  transition: 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+
+#intSpan,
+#boolSpan,
+#enumSpan,
+#longSpan,
+#voidSpan,
+#staticSpan,
+#privateSpan,
+#mainSpan {
+  color: var(--quaternary-color);
+}
+
+#intSpan:hover,
+#boolSpan:hover,
+#enumSpan:hover,
+#longSpan:hover,
+#voidSpan:hover,
+#staticSpan:hover,
+#privateSpan:hover,
+#mainSpan:hover {
+  color: var(--secondary-color);
+  cursor: crosshair;
+}
+
+.columnOne span:hover,
+.columnTwo span:hover {
+  color: #ffffff;
+  cursor: crosshair;
+}
+
+.introductory .row {
+  animation: popUp 1s ease-in-out;
+}
+
+.description {
+  padding: 1rem 5rem;
+}
+
+.description span {
+  color: var(--primary-color);
+}
+
+.description {
+  text-align: justify;
+  padding: 1rem 5rem;
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.12);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 0px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.7fr 1fr;
+    grid-template-areas:
+      "jolopic"
+      "utilities"
+      "box-red"
+      "introductory";
+  }
+
+  .imageJolo {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+    grid-template-areas:
+      " utilities jolopic ."
+      ". box-red ."
+      ". . introductory";
+  }
+
+  .imageJolo {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 1438px) and (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.8fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    gap: 0;
+    grid-template-areas:
+      "utilities jolopic ."
+      ". box-red ."
+      ". . introductory";
+  }
+
+  .imageJolo {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    opacity: 0.9;
+  }
+}

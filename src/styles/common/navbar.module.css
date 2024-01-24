@@ -1,0 +1,91 @@
+.container {
+  position: fixed;
+  z-index: 999;
+  padding: 0.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clockandjapaneseText {
+  padding: 1.875rem;
+}
+
+.menu {
+  padding: 1.875rem;
+}
+
+.menuItem li {
+  display: inline-block;
+  cursor: crosshair;
+  transition: 0.3s ease-in-out;
+  padding: 0 1.5rem;
+  color: #f5f5f5;
+}
+
+.navlinkActive {
+  background-color: #ff4141;
+  text-transform: uppercase;
+}
+
+.menuItem li:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.menuItem li:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 0px) {
+  .clockandjapaneseText {
+    font-size: 0.8rem;
+  }
+  .menuItem li {
+    display: block;
+    cursor: crosshair;
+    transition: 0.3s ease-in-out;
+    font-size: 0.8rem;
+  }
+
+  .menuItem li:first-child {
+    border-radius: 0;
+  }
+
+  .menuItem li:last-child {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 880px) and (min-width: 481px) {
+  .menuItem li {
+    display: block;
+    cursor: crosshair;
+    transition: 0.3s ease-in-out;
+    padding: 0 1.5rem;
+  }
+
+  .menuItem li:first-child {
+    border-radius: 0;
+  }
+
+  .menuItem li:last-child {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  .menuItem li {
+    display: block;
+    cursor: crosshair;
+    transition: 0.3s ease-in-out;
+    padding: 0 1.5rem;
+  }
+
+  .menuItem li:first-child {
+    border-radius: 0;
+  }
+
+  .menuItem li:last-child {
+    border-radius: 0;
+  }
+}
