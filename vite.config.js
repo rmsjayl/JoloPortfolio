@@ -17,5 +17,4 @@ export default defineConfig({
       "@sections": path.resolve(__dirname, "src/sections"),
     },
   },
-  base: "/JoloPortfolio/",
 });
