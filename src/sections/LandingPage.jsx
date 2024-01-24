@@ -1,6 +1,5 @@
 import STYLE from "@styles/components/home.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import JOLOTWO from "@assets/img/jolordss.png";
 import JOLOTRY from "@assets/img/jolo.png";
 
 const LandingPage = () => {
@@ -10,7 +9,7 @@ const LandingPage = () => {
         <div className={STYLE.utilities}>
           <div className={STYLE.box}>
             <div className={STYLE.name}>
-              <div className={STYLE.textHeader}>
+              <div className={STYLE.textHeader} data-aos="fade-up">
                 <span className={STYLE.givenName}> JAY LORD</span>
                 <span className={STYLE.surname}> RAMOS </span>
               </div>
@@ -28,7 +27,7 @@ const LandingPage = () => {
         </div>
         <div className={STYLE.boxTwo}>
           <div className={STYLE.row}>
-            <div className={STYLE.columnOne}>
+            <div className={STYLE.columnOne} data-aos="fade-left">
               <span id={STYLE.intSpan}>int</span>
               <span>str</span>
               <span id={STYLE.boolSpan}>bool</span>
@@ -38,7 +37,7 @@ const LandingPage = () => {
               <span id={STYLE.staticSpan}>static</span>
               <span>args</span>
             </div>
-            <div className={STYLE.columnTwo}>
+            <div className={STYLE.columnTwo} data-aos="fade-right">
               <span>char</span>
               <span id={STYLE.enumSpan}>enum</span>
               <span>arr</span>
@@ -52,7 +51,7 @@ const LandingPage = () => {
         </div>
         <div className={STYLE.introductory}>
           <div className={STYLE.fullstackText}>
-            <div className={STYLE.textHeader}>
+            <div className={STYLE.textHeader} data-aos="fade-up">
               <span className={STYLE.textFull}> FULL</span>
               <span className={STYLE.textStack}> STACK </span>
               <span className={STYLE.developer}> DEV </span>

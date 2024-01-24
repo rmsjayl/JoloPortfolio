@@ -37,7 +37,7 @@ const Projects = () => {
       <small>
         Browse my{" "}
         <a href="https://github.com/rmsjayl" target="_blank">
-          GITHUB
+          <span className={PROJECTSTYLE.githubEmphasis}>GITHUB</span>
         </a>{" "}
         for more
       </small>

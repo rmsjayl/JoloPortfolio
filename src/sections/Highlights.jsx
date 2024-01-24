@@ -1,9 +1,6 @@
 import { useState } from "react";
 import HIGHLIGHTSTYLE from "@styles/components/highlights.module.css";
 import RESUME from "@docs/RAMOS_Resume.pdf";
-import USTLOGO from "@assets/img/USTlogo.png";
-import UELOGO from "@assets/img/UElogo.png";
-import BLACKFORTLOGO from "@assets/img/blackfortlogo.png";
 
 const Highlights = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -48,7 +45,7 @@ const Highlights = () => {
       <div className={HIGHLIGHTSTYLE.container}>
         <div className={HIGHLIGHTSTYLE.about}>
           <div className={HIGHLIGHTSTYLE.header}>PROFILE</div>
-          <div className={HIGHLIGHTSTYLE.paragraph}>
+          <div className={HIGHLIGHTSTYLE.paragraph} data-aos="fade-up">
             A <span>technology enthusiast</span> from
             <span> University of Santo Tomas </span> with a degree of{" "}
             <span>Bachelor of Science in Information Systems.</span> <br />

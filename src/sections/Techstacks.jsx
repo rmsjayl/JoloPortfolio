@@ -17,7 +17,7 @@ const Techstacks = () => {
               {ICONS.map((icon, id) => {
                 return (
                   <Fragment key={id}>
-                    <div className={TECHSTACKSSTYLE.icons}>
+                    <div className={TECHSTACKSSTYLE.icons} data-aos="fade-up">
                       <Tooltip tooltipText={icon.name}>
                         <LazyLoadImage
                           key={id}

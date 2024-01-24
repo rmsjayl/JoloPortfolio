@@ -5,8 +5,17 @@ import Techstacks from "@sections/Techstacks";
 import Projects from "@sections/Projects";
 import Contact from "@sections/Contact";
 import Footer from "@sections/Footer";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <>
       <Navbar />

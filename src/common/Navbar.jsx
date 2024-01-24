@@ -24,6 +24,7 @@ const Navbar = () => {
   ];
 
   const [date, setDate] = useState(moment().format("MMM DD, YYYY — h:mm:ss a"));
+  const [toggleOpen, setToggleOpen] = useState(false);
 
   useEffect(() => {
     const interval = () => {
