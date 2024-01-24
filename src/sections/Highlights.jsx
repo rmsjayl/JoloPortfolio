@@ -99,6 +99,9 @@ const Highlights = () => {
             <>
               <div className={HIGHLIGHTSTYLE.redwarriorOverlay}>
                 <div className={HIGHLIGHTSTYLE.header}>UE</div>
+                <div className={HIGHLIGHTSTYLE.completionDateUe}>
+                  <span> June 2017 - June 2019</span>
+                </div>
               </div>
             </>
           ) : (
@@ -107,6 +110,7 @@ const Highlights = () => {
               <div className={HIGHLIGHTSTYLE.subHeader}>
                 University of the East — Manila
               </div>
+
               <div className={HIGHLIGHTSTYLE.additionalInfo}>
                 <div className={HIGHLIGHTSTYLE.accomplishmentsUe}>
                   <ul>
@@ -116,9 +120,6 @@ const Highlights = () => {
                     </li>
                     <li> Finished Grade 11 with Honors </li>
                   </ul>
-                </div>
-                <div className={HIGHLIGHTSTYLE.completionDateUe}>
-                  <span> June 2017 - June 2019</span>
                 </div>
               </div>
             </>
@@ -134,6 +135,9 @@ const Highlights = () => {
             <>
               <div className={HIGHLIGHTSTYLE.tigerOverlay}>
                 <div className={HIGHLIGHTSTYLE.header}>UST</div>
+                <div className={HIGHLIGHTSTYLE.completionDateUST}>
+                  <span> Aug 2019 - June 2023</span>
+                </div>
               </div>
             </>
           ) : (
@@ -142,6 +146,7 @@ const Highlights = () => {
               <div className={HIGHLIGHTSTYLE.subHeader}>
                 University of Santo Tomas
               </div>
+
               <div className={HIGHLIGHTSTYLE.additionalInfo}>
                 <div className={HIGHLIGHTSTYLE.accomplishmentsUst}>
                   <ul>
@@ -156,9 +161,6 @@ const Highlights = () => {
 
                     <li> Rotaract UST A.Y 2019-2020 </li>
                   </ul>
-                  <div className={HIGHLIGHTSTYLE.completionDateUST}>
-                    <span> Aug 2019 - June 2023</span>
-                  </div>
                 </div>
               </div>
             </>
@@ -173,6 +175,9 @@ const Highlights = () => {
             <>
               <div className={HIGHLIGHTSTYLE.blackfortOverlay}>
                 <div className={HIGHLIGHTSTYLE.header}>BLACKFORT PH</div>
+                <div className={HIGHLIGHTSTYLE.completionDateBlackfort}>
+                  <span> Feb 2023 - June 2023</span>
+                </div>
               </div>
             </>
           ) : (
@@ -210,9 +215,6 @@ const Highlights = () => {
                       modifications and collaborate efficiently with the team.
                     </li>
                   </ul>
-                  <div className={HIGHLIGHTSTYLE.completionDateBlackfort}>
-                    <span> Feb 2023 - June 2023</span>
-                  </div>
                 </div>
               </div>
             </>

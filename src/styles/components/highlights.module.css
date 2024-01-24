@@ -54,6 +54,7 @@
   width: 100%;
   transition: 0.2s ease-in-out;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -132,10 +133,8 @@
 }
 
 .header {
-  margin-top: 1.5rem;
   font-size: 2rem;
   font-weight: 900;
-  padding: 1.5rem 0;
   text-align: right;
 }
 
