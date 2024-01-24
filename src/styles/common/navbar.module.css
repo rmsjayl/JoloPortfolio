@@ -17,6 +17,7 @@
 
 .menuItem li {
   display: inline-block;
+  text-align: center;
   cursor: crosshair;
   transition: 0.3s ease-in-out;
   padding: 0 1.5rem;

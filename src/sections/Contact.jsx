@@ -45,7 +45,7 @@ const Contact = () => {
                   name="name"
                   value={sendInfo.name}
                   onChange={(event) => handleChange(event, "name")}
-                  placeholder="yourdomain@example.com"
+                  placeholder="State your name"
                   required
                 />
               </div>
