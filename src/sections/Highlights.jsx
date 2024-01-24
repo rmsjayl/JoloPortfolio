@@ -112,8 +112,8 @@ const Highlights = () => {
                 <div className={HIGHLIGHTSTYLE.accomplishmentsUe}>
                   <ul>
                     <li>
-                      SENIOR HIGHSCHOOL — SCIENCE, TECHNOLOGY, ENGINEERING,
-                      MATHEMATICS TRACK
+                      Senior Highschool — Science, Technology, Engineering,
+                      Mathematics academic track
                     </li>
                     <li> Finished Grade 11 with Honors </li>
                   </ul>
@@ -188,7 +188,7 @@ const Highlights = () => {
                   <ul>
                     <li>Software Engineer — Intern</li>
                     <li>
-                      Worked on Agile methodology, which gained an exposure on
+                      Worked on Agile methodology, which gained exposure on
                       sprints.
                     </li>
                     <li>
