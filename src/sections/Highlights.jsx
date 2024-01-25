@@ -48,11 +48,14 @@ const Highlights = () => {
           <div className={HIGHLIGHTSTYLE.paragraph} data-aos="fade-up">
             A <span>technology enthusiast</span> from
             <span> University of Santo Tomas </span> with a degree of{" "}
-            <span>Bachelor of Science in Information Systems.</span> <br />
+            <span>
+              Bachelor of Science in Information Systems — Major in Service
+              Management.
+            </span>{" "}
+            <br />
             <br />
             Specialized in building scalable web applications and working across
-            fullstack with his <span> skills and procedures</span>. — Major in
-            Service Management.
+            fullstack with his <span> skills and procedures</span>.
             <br />
             <br />I take pride in delivering services of
             <span> exceptional quality. </span> I embrace challenges with
