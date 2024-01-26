@@ -81,7 +81,7 @@ const Contact = () => {
             <ul className={CONTACTSTYLE.information}>
               <li>GMAIL — rmsjayl.dev@gmail.com</li>
               <li>LINKEDIN — in/jaylordramos</li>
-              <li>GITHUB — jolouste</li>
+              <li>GITHUB — rmsjayl</li>
             </ul>
           </div>
 
