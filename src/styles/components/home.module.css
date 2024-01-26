@@ -8,8 +8,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: 0.7fr 0.3fr 1fr;
-  grid-template-rows: 1fr 0.9fr 0.8fr;
+  grid-template-columns: 0.7fr 0.2fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr;
   grid-template-areas:
     "utilities jolopic ."
     ". box-red  .  "
@@ -35,12 +35,17 @@
   max-width: 800px;
   position: absolute;
   filter: drop-shadow(10px 0px 0px #3a3a3a);
+  object-fit: contain;
 }
 
 .imageProperties {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
 }
 
 .fullstackText,
@@ -201,7 +206,7 @@
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.7fr 1fr;
+    grid-template-rows: auto 0.2fr 0.2fr;
     grid-template-areas:
       "jolopic"
       "utilities"
@@ -210,20 +215,19 @@
   }
 
   .imageJolo {
-    top: 0;
+    opacity: 0.9;
+    position: absolute;
+    top: 65px;
     left: 0;
     right: 0;
-    margin: auto;
-    bottom: 0;
-    opacity: 0.9;
   }
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.2fr;
     gap: 0;
     grid-template-areas:
       " utilities jolopic ."
@@ -232,20 +236,19 @@
   }
 
   .imageJolo {
+    opacity: 0.9;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    bottom: 0;
-    opacity: 0.9;
   }
 }
 
 @media screen and (max-width: 1438px) and (min-width: 769px) {
   .container {
     display: grid;
-    grid-template-columns: 1fr 0.4fr 0.8fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr;
+    grid-template-columns: 0.5fr 0.2fr 0.5fr;
+    grid-template-rows: 0.2fr 0.5fr auto;
     gap: 0;
     grid-template-areas:
       "utilities jolopic ."
@@ -254,11 +257,10 @@
   }
 
   .imageJolo {
-    top: 0;
+    opacity: 0.9;
+    position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 0;
-    opacity: 0.9;
   }
 }

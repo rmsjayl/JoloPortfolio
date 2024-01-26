@@ -102,6 +102,12 @@ const Highlights = () => {
                 <div className={HIGHLIGHTSTYLE.completionDateUe}>
                   <span> June 2017 - June 2019</span>
                 </div>
+                <span
+                  className={HIGHLIGHTSTYLE.viewMore}
+                  id={HIGHLIGHTSTYLE.viewWhite}
+                >
+                  Tap to view more
+                </span>
               </div>
             </>
           ) : (
@@ -138,6 +144,9 @@ const Highlights = () => {
                 <div className={HIGHLIGHTSTYLE.completionDateUST}>
                   <span> Aug 2019 - June 2023</span>
                 </div>
+                <span className={HIGHLIGHTSTYLE.viewMore}>
+                  Tap to view more
+                </span>
               </div>
             </>
           ) : (
@@ -178,6 +187,12 @@ const Highlights = () => {
                 <div className={HIGHLIGHTSTYLE.completionDateBlackfort}>
                   <span> Feb 2023 - June 2023</span>
                 </div>
+                <span
+                  className={HIGHLIGHTSTYLE.viewMore}
+                  id={HIGHLIGHTSTYLE.viewWhite}
+                >
+                  Tap to view more
+                </span>
               </div>
             </>
           ) : (

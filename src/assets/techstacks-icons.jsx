@@ -21,6 +21,11 @@ import ICON20 from "@assets/svg/icons/aspdotnet-icon.svg";
 import ICON21 from "@assets/svg/icons/heroku-icon.svg";
 import ICON22 from "@assets/svg/icons/sass-icon.svg";
 import ICON23 from "@assets/svg/icons/csharp-icon.svg";
+import ICON24 from "@assets/svg/icons/ajax-icon.svg";
+import ICON25 from "@assets/svg/icons/jquery-icon.svg";
+import ICON26 from "@assets/svg/icons/vite-icon.svg";
+import ICON27 from "@assets/svg/icons/bootstrap-icon.svg";
+import ICON28 from "@assets/svg/icons/tailwindcss-icon.svg";
 
 const ICONS = [
   {
@@ -137,6 +142,31 @@ const ICONS = [
     id: 23,
     name: "C#",
     image: ICON23,
+  },
+  {
+    id: 24,
+    name: "Ajax",
+    image: ICON24,
+  },
+  {
+    id: 25,
+    name: "jQuery",
+    image: ICON25,
+  },
+  {
+    id: 26,
+    name: "Vite",
+    image: ICON26,
+  },
+  {
+    id: 27,
+    name: "Bootstrap",
+    image: ICON27,
+  },
+  {
+    id: 28,
+    name: "Tailwind CSS",
+    image: ICON28,
   },
 ];
 
