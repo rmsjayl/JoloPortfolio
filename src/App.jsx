@@ -17,7 +17,7 @@ function App() {
           }
         >
           <Routes>
-            <Route path="/JoloPortfolio" element={<Home />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </Suspense>
       </Router>
