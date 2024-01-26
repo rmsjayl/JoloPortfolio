@@ -9,7 +9,7 @@ const Techstacks = () => {
     <>
       <div className={TECHSTACKSSTYLE.techstacks} id="Tech Stacks">
         <div className={TECHSTACKSSTYLE.container}>
-          <div className={TECHSTACKSSTYLE.header}>
+          <div className={TECHSTACKSSTYLE.header} data-aos="fade-up">
             <span>tech stacks</span> utilized
           </div>
           <div className={TECHSTACKSSTYLE.techStacksIconContainer}>
@@ -17,7 +17,7 @@ const Techstacks = () => {
               {ICONS.map((icon, id) => {
                 return (
                   <Fragment key={id}>
-                    <div className={TECHSTACKSSTYLE.icons} data-aos="fade-up">
+                    <div className={TECHSTACKSSTYLE.icons}>
                       <Tooltip tooltipText={icon.name}>
                         <LazyLoadImage
                           key={id}
