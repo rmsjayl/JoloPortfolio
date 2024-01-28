@@ -76,7 +76,7 @@ const Projects = () => {
           href="https://github.com/rmsjayl/Vowel-Checker-APP"
           title="Vowel Checker App"
           src={getRandomImage()}
-          description="A web-based web-based application crafted for the specific purpose of determining whether a given word contains vowels."
+          description="A web-based application crafted for the purpose of counting the vowels of a given word."
           toolUsed={
             <ul className={PROJECTSTYLE.toolsUtilized}>
               {vowelCheckerTools.map((tool, key) => (
